@@ -22,7 +22,6 @@ public:
         cout << "our number is " << a << " + " << b << "i" << endl;
     }
 
-   
 };
  complex sumcompelx(complex o1, complex o2)
     {
