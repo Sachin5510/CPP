@@ -15,7 +15,7 @@ class Point{
 
 };
 int main(){
-    Point p(1, 1);
+    Point p( 1, 1);
     p.displayPoint();
 
     Point q(4, 6);
