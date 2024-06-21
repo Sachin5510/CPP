@@ -26,7 +26,7 @@ int Base::getData2()
 {
     return data2;
 }
-class Derived : public Base
+class Derived : private Base
 { // Class is being derived publically
     int data3;
 
@@ -37,6 +37,7 @@ public:
 
 void Derived ::process()
 {
+    setData();
     data3 = data2 * Base::getData1();
 }
 
@@ -50,7 +51,7 @@ void Derived ::display()
 int main()
 {
     Derived der;
-    der.setData();
+    // der.setData();
     der.process();
     der.display();
 
