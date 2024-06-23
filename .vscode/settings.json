@@ -4,6 +4,7 @@
         "iomanip": "cpp",
         "iostream": "cpp",
         "tut.C": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "complex": "cpp"
     }
 }
