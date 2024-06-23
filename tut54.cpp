@@ -6,9 +6,12 @@ In this tutorial, we will discuss polymorphism in C++
 Polymorphism in C++
 “Poly” means several and “morphism” means form. So we can say that polymorphism is something that has several forms or we can say it as one name and multiple forms. There are two types of polymorphism:
 
-Compile-time polymorphism
-Run time polymorphism
-Compile Time Polymorphism
+*****Compile-time polymorphism
+1.Run time polymorphism
+1.1 Virtual functions
+2.Compile Time Polymorphism
+2.1 Function overloading
+2.2 Operator overloading
 
 In compile-time polymorphism, it is already known which function will run. Compile-time polymorphism is also called early binding, which means that you are already bound to the function call and you know that this function is going to run. There are two types of compile-time polymorphism:
 
