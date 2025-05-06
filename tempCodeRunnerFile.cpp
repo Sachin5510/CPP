@@ -1,1 +1,3 @@
-void
+{
+    cout << v[i] << " " << endl;
+  }
