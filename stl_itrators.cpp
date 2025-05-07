@@ -39,7 +39,7 @@ int main() {
     // cout << value << " ";
   }
   
-  for(int value : v){
+  for(int  &value : v){
     value++;
     cout << value << " ";
   }

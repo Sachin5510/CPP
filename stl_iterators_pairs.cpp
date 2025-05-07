@@ -18,7 +18,17 @@ int main()
     // or
     cout<<it->first<<"  "<<it->second<<endl;
   }
-
+  for(pair<  int, int>&value : v) {
+    value.first++;
+    value.second++;
+    cout << value.first << " " << value.second << endl;
+  }
 
   return 0;
 }
+
+
+
+
+
+//----------------------------
