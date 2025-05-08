@@ -24,9 +24,13 @@ void swapAlternate(int arr[], int size)
 int main()
 {
     int arr[6] = {1, 2, 3, 4, 5, 6};
+    int odd[5]={1, 2, 3, 4, 5};
 
     swapAlternate(arr, 6);
     printArray(arr, 6);
+
+swapAlternate(odd, 5);
+    printArray(odd, 5); 
 
     return 0;
 }
