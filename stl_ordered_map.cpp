@@ -39,7 +39,12 @@ int main()
   s[4] = "four";
   s[3] = "three";
 
-  // s.find(3); 
-   printsmap(s);
+  // for easre the pair in the map
+  auto it = s.find(7); // 0(1)
+  if (it != s.end());
+  s.erase(it); // log(1)         // m.clear();
+
+      // s.find(3);
+      printsmap(s);
   return 0;
 }
