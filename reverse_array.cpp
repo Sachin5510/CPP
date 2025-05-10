@@ -41,18 +41,14 @@ int main()
   //   cin >> arr[i];
   // }
 
-
-  int a[5]= {2,3,4,6,10};
-  int aeven[4]={1,2,3,4};
-
+  int a[5] = {2, 3, 4, 6, 10};
+  int aeven[4] = {1, 2, 3, 4};
 
   reverse(a, 5);
   reverse(aeven, 4);
 
-  printarray(a,5);
-  printarray(aeven,4);
-
-
+  printarray(a, 5);
+  printarray(aeven, 4);
 
   return 0;
 }
