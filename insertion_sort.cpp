@@ -10,7 +10,7 @@ void isort(vector<int> &v, int n)
     int j = i - 1;
     for (; j >= 0; j--)
     {
-      if (v[j + 1] > temp)
+      if (v[j] > temp)
       {
         // shift
         v[j + 1] = v[j];
