@@ -9,7 +9,7 @@ int printcount(int n)
     return 1;
   }
   //----------------------------------------------
-  // prient high -low value
+  // print high -low value
   cout << n << " ";
 
   printcount(n - 1);
