@@ -16,7 +16,7 @@ bool palidrome(string str, int n, int p)
   else
   {
     return palidrome(str, n + 1, p - 1);
-  }
+  } 
 }
 int main()
 {
