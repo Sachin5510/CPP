@@ -24,11 +24,15 @@ class List
   Node *tail;
 
 public:
+  // constructor
   List()
   {
 
     head = tail = NULL;
   }
+
+  // Push Front
+
   void push_front(int val)
   {
     Node *newNode = new Node(val);
@@ -43,7 +47,7 @@ public:
       head = newNode;
     }
   }
-
+  // push back
   void push_back(int val)
   {
     Node *newNode = new Node(val);
@@ -59,6 +63,88 @@ public:
     return;
   }
 
+  void pop_front()
+  {
+    if (head == NULL)
+    {
+      cout << " LL is empty ";
+      return;
+    }
+
+    Node *temp = head;
+    head = temp->next;
+    temp->next = NULL;
+    delete temp;
+  }
+
+  void pop_back()
+  {
+    if (head == NULL)
+    {
+      cout << "link list is empty \n";
+      return;
+    }
+    Node *temp = head;
+    while (temp->next != tail)
+    {
+      temp = temp->next;
+    }
+    temp->next = NULL;
+    delete tail;
+    tail = temp;
+  }
+
+  // insert middle of link list
+
+  void insert(int val, int pos)
+  {
+
+    if (pos < 0)
+    {
+      cout << " Invalid Pos\n";
+      return;
+    }
+    if (pos == 0)
+    {
+      push_front(val);
+      return;
+    }
+
+    Node *temp = head;
+    for (int i = 0; i < pos - 1; i++)
+    {
+      if (temp == NULL)
+      {
+        cout << " Invalid pos \n";
+        return;
+      }
+      temp = temp->next;
+    }
+    Node *newNode = new Node(val);
+    newNode->next = temp->next;
+    temp->next = newNode;
+  }
+
+  //  search in linklist
+
+  int search(int key)
+  {
+    Node *temp = head;
+    int index = 0;
+
+    while (temp != NULL)
+    {
+      if (temp->data == key)
+      {
+        return index;
+      }
+      temp = temp->next;
+      index++;
+    }
+    return -1;
+  }
+
+  ///  Print Link
   void print()
   {
     Node *temp = head;
@@ -79,11 +165,14 @@ int main()
   l1.push_front(2);
   l1.push_front(3);
   l1.push_back(4);
+  l1.insert(5, 2);
+  // l1.pop_front();
+  // l1.pop_front();
+  // l1.print();
+  // l1.pop_back();
   l1.print();
 
-  // Node* node1 =new Node(10);
-  // cout<< node1-> data <<endl;
-  // cout<< node1-> next <<endl;
+  cout << l1.search(9) << endl;
 
   return 0;
 }
