@@ -20,7 +20,7 @@ int fibo(int n){
 
 int main(){
   int n;
-  cout<<"enter fibonachi number";
+  cout<<"enter fibonachi number"<<" ";
   cin>>n;
 
    

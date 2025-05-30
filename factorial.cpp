@@ -11,7 +11,7 @@ int factorial(int n){
 
   // recursive relation
 int step1 = n-1;
-int step2 = n* step1;
+int step2 = n* factorial(step1);
 return step2;
 
 // return n * factorial(n-1);

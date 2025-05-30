@@ -20,7 +20,8 @@ void isort(vector<int> &v, int n)
         break;
       }
     }
-    v[j + 1] = temp;
+    v[j + 1] = temp; 
+
   }
 }
 void printa(vector<int> &v, int n)

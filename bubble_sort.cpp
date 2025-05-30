@@ -36,11 +36,11 @@ void printa(vector<int> &v, int n)
 int main()
 {
 
-  // vector<int> v = {12, 3, 4, 2, 6, 1};
-  vector<int> v = {1,2,3,4,5};
+  vector<int> v = {12, 3, 4, 2, 6, 1};
+  // vector<int> v = {1,2,3,4,5};
 
-  bubblesort(v, 5);
-  printa(v, 5);
+  bubblesort(v, 6);
+  printa(v, 6);
 
   return 0;
 }

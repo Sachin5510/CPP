@@ -21,7 +21,7 @@ int main()
 
   int n = 5;
   int a[5] = {1, 2, 4, 5, 7};
-  int k = 7;
+  int k = 9;
 
    
 bool ans= lsearch(a, n, k);
