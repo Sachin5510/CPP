@@ -25,7 +25,7 @@ int binarys(int nums[], int n, int key)
     {
       end = mid - 1;
     }
-   mid = (start+end)/2;
+  //  mid = (start+end)/2;
     mid = start + ((end-start)/2);
   }
   return -1;
